@@ -1,0 +1,4 @@
+-- settings.sql
+CREATE DATABASE dive;
+CREATE USER diveuser WITH PASSWORD 'dive';
+GRANT ALL PRIVILEGES ON DATABASE dive TO diveuser;
