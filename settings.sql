@@ -1,0 +1,4 @@
+
+CREATE DATABASE diver;
+CREATE USER diveruser WITH PASSWORD 'diver';
+GRANT ALL PRIVILEGES ON DATABASE diver TO diveruser;
