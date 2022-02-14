@@ -1,0 +1,16 @@
+MODELS:
+    SITE MODEL
+        Site ID
+        Owner
+        Name
+        Country
+        Max Depth
+        Type
+        Notable Marine Life
+
+    REVIEW MODEL:
+        Owner
+        Foriegn Key = Site ID
+        Visited = boolean
+        Favorite = boolean
+        Bucket List = boolean
