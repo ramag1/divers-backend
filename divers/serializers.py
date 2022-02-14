@@ -7,14 +7,16 @@ class ReviewSerializer(serializers.HyperlinkedModelSerializer):
         source = 'site'
     )
 
-    site = serializers.HyperlinkedRelatedField(
-        view_name='site_detail', read_only=True)
+    site_name = serializers.SlugRelatedField(
+        queryset=Site.objects.all(), slug_field='name', source='site')
+    # site = serializers.HyperlinkedRelatedField(
+    #     view_name='site_detail', read_only=True)
     
     owner = serializers.ReadOnlyField(source='owner.username')
 
     class Meta:
         model = Review
-        fields = ('id', 'site', 'visited', 'site_id', 'favorite', 'bucket_list', 'owner', 'comments')
+        fields = ('id', 'site_name', 'visited', 'site_id', 'favorite', 'bucket_list', 'owner', 'comments')
 
 class SiteSerializer(serializers.HyperlinkedModelSerializer):
     reviews = serializers.HyperlinkedRelatedField(
