@@ -21,6 +21,7 @@ class ReviewSerializer(serializers.HyperlinkedModelSerializer):
 class SiteSerializer(serializers.HyperlinkedModelSerializer):
     reviews = serializers.HyperlinkedRelatedField(
         view_name='review_detail', many=True, read_only=True)
+    
     owner = serializers.ReadOnlyField(source='owner.username')
 
 
