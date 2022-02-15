@@ -18,7 +18,7 @@ class Review(models.Model):
     visited = models.BooleanField()
     favorite = models.BooleanField()
     bucket_list = models.BooleanField()
-    comments = models.CharField(max_length=300)
+    comments = models.CharField(max_length=300, default= '', blank=True)
     owner = models.ForeignKey(
         'users.User', related_name='reviews', on_delete=models.CASCADE)
 
