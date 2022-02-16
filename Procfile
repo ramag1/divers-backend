@@ -1,0 +1,1 @@
+web: gunicorn divers-backend_django.wsgi
