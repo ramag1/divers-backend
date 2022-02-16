@@ -1,1 +1,1 @@
-web: gunicorn divers-backend_django.wsgi
+web: gunicorn django_divers.wsgi
