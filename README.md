@@ -3,18 +3,11 @@ Divers Discovery - a browser-based, full stack tool coded in React using JavaScr
 
 This backend database was deployed via Heroku.
 
-
-Link to the [tool](## Project Description 
-Divers Discovery - a browser-based, full stack tool coded in React using JavaScript and CSS, supported by a backend coded in PostgreSQL, Python and Django.
-
-Diving Tracker & Information app features a browsable catalog of global dive sites to add to your curated list of Visited sites, as well as a Bucket List of sites you wish to visit. Users can add their own dive sites if not visible in the seeded data.
-
-Leveraged new animated CSS technology/Key Frames and collapsable hamburger menu in navigation bar.
-
-
-Link to the [backend](https://divers-discovery.netlify.app/).
+Link to the [backend](https://divers-discovery-backend.herokuapp.com/).
+Link to the [tool](https://divers-discovery.netlify.app/).
 
 ## Wireframes & Planning
+![Screen Shot 2022-02-16 at 8 05 55 PM](https://user-images.githubusercontent.com/93795090/154384711-2e6367bd-dccf-4ca7-8afe-2eeb509de66c.png)
 
 
 ## Installation Instructions
